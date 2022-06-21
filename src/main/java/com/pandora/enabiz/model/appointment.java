@@ -23,5 +23,4 @@ public class appointment {
     private UUID doctorId;
     private Date appointmentDate;
 
-
 }
