@@ -5,20 +5,21 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
 @Entity
-@Table(name="hospital")
+@Table(name="clinic")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Hospital {
+public class Clinic {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
-    @Column(name = "name")
-    private String name;
+    @Column(name = "clinic_name")
+    private String clinicName;
 
     @ManyToOne
-    private City city;
-
+    private Hospital hospital;
 }
