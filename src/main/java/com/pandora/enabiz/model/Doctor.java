@@ -13,6 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Doctor {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
