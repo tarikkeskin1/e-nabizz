@@ -19,6 +19,7 @@ public class Hospital {
     private String name;
 
     @ManyToOne
+    @JoinColumn(name="city_id")
     private City city;
 
 }

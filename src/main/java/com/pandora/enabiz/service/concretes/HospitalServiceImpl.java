@@ -25,4 +25,9 @@ public class HospitalServiceImpl implements HospitalService {
     public List<Hospital> getHospitalsByCityId(Long cityId) {
         return hospitalRepo.getHospitalsByCityId(cityId);
     }
+
+    @Override
+    public Hospital save(Hospital hospital) {
+        return hospitalRepo.save(hospital);
+    }
 }
